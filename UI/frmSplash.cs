@@ -22,7 +22,12 @@ namespace UI
             if (progressBar1.Value < 100)
                 progressBar1.Value = progressBar1.Value + 4;
             else
-                Application.Exit();
+            {
+                frmLogin frmLogin1 = new frmLogin();
+                timer1.Enabled = false;
+                frmLogin1.Show();
+                this.Dispose(false);
+            }
         }
     }
 }

@@ -15,3 +15,4 @@ C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.exe
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.pdb
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.frmLogin.resources
