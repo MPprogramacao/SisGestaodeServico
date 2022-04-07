@@ -62,7 +62,14 @@ namespace UI
 
         public void verificar()
         {
-            MessageBox.Show("Teste", "Ok");
+            if ((txtNome.Text != "") && (txtSenha.Text != ""))
+            {
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                this.Dispose();
+            }                         
+            else
+                MessageBox.Show("Todos os campos devem ser preenchidos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
