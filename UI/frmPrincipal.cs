@@ -38,5 +38,21 @@ namespace UI
         {
             sair();
         }
+
+        private void úteisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void configuraçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConfiguracao frmConfiguracao1 = new frmConfiguracao();
+            frmConfiguracao1.ShowDialog();
+        }
     }
 }
