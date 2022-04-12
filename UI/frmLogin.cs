@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+using Models;
+using BLL;
 
 namespace UI
 {
@@ -62,15 +65,46 @@ namespace UI
 
         public void verificar()
         {
-            if ((txtNome.Text != "") && (txtSenha.Text != ""))
+            /*
+             if ((txtNome.Text != "") && (txtSenha.Text != ""))
+              {
+                  frmPrincipal principal = new frmPrincipal();
+                  principal.usuario = txtNome.Text;
+                  principal.Show();
+                  this.Dispose();
+              }                         
+              else
+                  MessageBox.Show("Todos os campos devem ser preenchidos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+          */
+
+            try
             {
-                frmPrincipal principal = new frmPrincipal();
-                principal.usuario = txtNome.Text;
-                principal.Show();
-                this.Dispose();
-            }                         
-            else
-                MessageBox.Show("Todos os campos devem ser preenchidos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Usuario usuario = new Usuario();
+                usuario.Login = txtNome.Text;
+                usuario.Senha = txtSenha.Text;
+
+                LoginBLL usuarioBLL = new LoginBLL();
+
+                if (usuarioBLL.verificaLogin(usuario)){
+                    Login.User = usuario.Login;
+                    frmPrincipal principal = new frmPrincipal();
+                    principal.usuario = usuario.Login;
+                    principal.Show();
+                    this.Dispose(false);
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou Senha incorreto! Tente novamente", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    txtNome.Text = "";
+                    txtSenha.Text = "";
+                    txtNome.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
     }
 }

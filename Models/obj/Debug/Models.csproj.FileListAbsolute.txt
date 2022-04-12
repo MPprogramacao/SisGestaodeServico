@@ -4,3 +4,6 @@ C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\obj\Debug\Models.dll
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\obj\Debug\Models.pdb
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\bin\Debug\System.Data.SQLite.dll
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\bin\Debug\System.Data.SQLite.xml
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\Models\obj\Debug\Models.csproj.CopyComplete

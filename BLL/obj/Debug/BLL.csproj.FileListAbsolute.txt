@@ -9,3 +9,5 @@ C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\BLL\obj\Debug\BLL.dll
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\BLL\obj\Debug\BLL.pdb
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\BLL\bin\Debug\System.Data.SQLite.dll
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\BLL\bin\Debug\System.Data.SQLite.xml

@@ -18,3 +18,5 @@ C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.frmLogin.resources
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.frmPrincipal.resources
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\obj\Debug\UI.frmConfiguracao.resources
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\bin\Debug\System.Data.SQLite.dll
+C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\UI\bin\Debug\System.Data.SQLite.xml
