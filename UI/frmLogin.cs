@@ -65,6 +65,7 @@ namespace UI
             if ((txtNome.Text != "") && (txtSenha.Text != ""))
             {
                 frmPrincipal principal = new frmPrincipal();
+                principal.usuario = txtNome.Text;
                 principal.Show();
                 this.Dispose();
             }                         
