@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Models;
+using DAL;
 
 namespace UI
 {
@@ -67,6 +68,9 @@ namespace UI
         private void frmPrincipal_Shown(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "Bem-vindo(a) " + usuario + " !";
+
+            SincBancos sincBancos = new SincBancos();
+            sincBancos.Sinc_tb_login();
         }
 
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
