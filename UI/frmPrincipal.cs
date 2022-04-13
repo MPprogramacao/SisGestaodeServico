@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Models;
 
 namespace UI
 {
     public partial class frmPrincipal : Form
     {
         public string usuario;
+        public int id_user;
 
         public frmPrincipal()
         {
@@ -60,7 +62,6 @@ namespace UI
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-           
         }
 
         private void frmPrincipal_Shown(object sender, EventArgs e)

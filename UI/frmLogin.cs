@@ -65,18 +65,6 @@ namespace UI
 
         public void verificar()
         {
-            /*
-             if ((txtNome.Text != "") && (txtSenha.Text != ""))
-              {
-                  frmPrincipal principal = new frmPrincipal();
-                  principal.usuario = txtNome.Text;
-                  principal.Show();
-                  this.Dispose();
-              }                         
-              else
-                  MessageBox.Show("Todos os campos devem ser preenchidos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-          */
-
             try
             {
                 Usuario usuario = new Usuario();
@@ -89,6 +77,7 @@ namespace UI
                     Login.User = usuario.Login;
                     frmPrincipal principal = new frmPrincipal();
                     principal.usuario = usuario.Login;
+                    principal.id_user = usuario.Id;
                     principal.Show();
                     this.Dispose(false);
                 }

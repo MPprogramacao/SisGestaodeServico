@@ -21,7 +21,7 @@ namespace DAL
             {
                 using (var cmd = conexaoLite.conexao().CreateCommand())
                 {
-                    cmd.CommandText = "SELECT * FROM tb_login Where usuario = '"+ usuario.Login + "' and senha="+usuario.Senha;
+                    cmd.CommandText = "SELECT * FROM tb_login Where ativo = '1' and usuario = '"+ usuario.Login + "' and senha="+usuario.Senha;
                     da = new SQLiteDataAdapter(cmd.CommandText, conexaoLite.conexao());
                     da.Fill(dt);
                 }
@@ -34,6 +34,8 @@ namespace DAL
 
             if (dt.Rows.Count > 0)
             {
+                //usuario.Id = dt.Rows[0].Field<int>("id"));
+                usuario.Id = Convert.ToInt32(dt.Rows[0].ItemArray[0]);
                 return true;
             }
             else

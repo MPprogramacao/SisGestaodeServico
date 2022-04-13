@@ -10,6 +10,7 @@ namespace Models
     {
         private String login;
         private String senha;
+        private int id;
 
         public String Login
         {
@@ -21,6 +22,12 @@ namespace Models
         {
             get { return senha; }
             set { senha = value; }
+        }
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
         }
     }
 }
