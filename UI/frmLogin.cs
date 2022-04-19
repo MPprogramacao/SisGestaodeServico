@@ -74,7 +74,7 @@ namespace UI
                 LoginBLL usuarioBLL = new LoginBLL();
 
                 if (usuarioBLL.verificaLogin(usuario)){
-                    Login.User = usuario.Login;
+                    Login.User = usuario.Id.ToString();
                     frmPrincipal principal = new frmPrincipal();
                     principal.usuario = usuario.Login;
                     principal.id_user = usuario.Id;

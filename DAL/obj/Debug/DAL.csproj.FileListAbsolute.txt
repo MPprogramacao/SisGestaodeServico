@@ -7,8 +7,6 @@ C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\obj\Debug\DAL.dll
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\obj\Debug\DAL.pdb
-C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\bin\Debug\System.Data.SQLite.dll
-C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\bin\Debug\System.Data.SQLite.xml
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\bin\Debug\MySql.Data.dll
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\bin\Debug\Google.Protobuf.dll
 C:\Users\Matheus\Desktop\Faculdade\Estágio Curricular Supervisionado I\Projeto\SisGestaodeServico\DAL\bin\Debug\ZstdNet.dll

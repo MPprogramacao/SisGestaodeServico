@@ -5,26 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 using System.Data;
-using System.Data.SQLite;
+using MySql.Data.MySqlClient;
 
 namespace DAL
 {
     public class LoginDAL
     {
-        private SQLiteDataAdapter da = null;
+        private MySqlDataAdapter mAdapter;
         private DataTable dt = new DataTable();
 
         public bool verificaLogin(Usuario usuario)
         {        
 
             try
-            {
-                using (var cmd = conexaoLite.conexao().CreateCommand())
-                {
-                    cmd.CommandText = "SELECT * FROM tb_login Where ativo = '1' and usuario = '"+ usuario.Login + "' and senha="+usuario.Senha;
-                    da = new SQLiteDataAdapter(cmd.CommandText, conexaoLite.conexao());
-                    da.Fill(dt);
-                }
+            {              
+                conexaoMySQL conexao1 = new conexaoMySQL();
+                conexao1.conexao();
+
+                string selectQuery = "SELECT * FROM tb_login Where ativo = '1' and usuario = '" + usuario.Login + "' and senha=" + usuario.Senha; ;
+                MySqlCommand command = new MySqlCommand(selectQuery, conexao1.mConn);
+                MySqlDataReader reader = command.ExecuteReader();
+                dt.Load(reader);
             }
             catch (Exception ex)
             {

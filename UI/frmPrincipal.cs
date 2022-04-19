@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Models;
-using DAL;
+using BLL;
 
 namespace UI
 {
@@ -67,10 +67,17 @@ namespace UI
 
         private void frmPrincipal_Shown(object sender, EventArgs e)
         {
+            PerfilBLL perfilBLL = new PerfilBLL();
+            Perfil perfil = new Perfil();
+
             toolStripStatusLabel1.Text = "Bem-vindo(a) " + usuario + " !";
 
-            SincBancos sincBancos = new SincBancos();
-            sincBancos.Sinc_tb_login();
+            if (perfilBLL.VerificaCoreFundo(perfil).Equals("C"))
+            {
+                this.BackColor = ColorTranslator.FromHtml(perfilBLL.RetornarCoreFundo(perfil));
+            }else if(perfilBLL.VerificaCoreFundo(perfil).Equals("I")){
+                this.BackgroundImage = Image.FromFile(perfilBLL.RetornarCoreFundo(perfil));
+            }
         }
 
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
@@ -99,8 +106,13 @@ namespace UI
 
             if((dlg1 == DialogResult.Yes) || (dlg1 == DialogResult.None))
             {
+                Perfil perfil = new Perfil();
+                PerfilBLL perfilBLL = new PerfilBLL();
+
                 colorDialog1.ShowDialog();
                 this.BackColor = colorDialog1.Color;
+                perfil.Cor = ColorTranslator.ToHtml(this.BackColor);
+                perfilBLL.SalvarCor(perfil);
                 this.BackgroundImage = null;
             }
         }
@@ -116,7 +128,23 @@ namespace UI
             
 
             if (openFileDialog1.FileName != "")
+            {
                 this.BackgroundImage = Image.FromFile(openFileDialog1.FileName);
+
+                Perfil perfil = new Perfil();
+                PerfilBLL perfilBLL = new PerfilBLL();
+
+                perfil.Image = openFileDialog1.FileName;
+                perfilBLL.SalvarImagem(perfil);
+            }
+                
+
+
+        }
+
+        private void movimentaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
