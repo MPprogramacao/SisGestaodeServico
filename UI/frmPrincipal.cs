@@ -146,5 +146,12 @@ namespace UI
         {
 
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCliente cliente = new frmCliente();
+            cliente.id_User = id_user;
+            cliente.ShowDialog();
+        }
     }
 }

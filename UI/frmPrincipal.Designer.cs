@@ -119,31 +119,32 @@ namespace UI
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "&Clientes";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "&Produtos";
             // 
             // fornecedoresToolStripMenuItem
             // 
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fornecedoresToolStripMenuItem.Text = "&Fornecedores";
             // 
             // serviçosToolStripMenuItem1
             // 
             this.serviçosToolStripMenuItem1.Name = "serviçosToolStripMenuItem1";
-            this.serviçosToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.serviçosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.serviçosToolStripMenuItem1.Text = "&Serviços";
             // 
             // orçamentoToolStripMenuItem
             // 
             this.orçamentoToolStripMenuItem.Name = "orçamentoToolStripMenuItem";
-            this.orçamentoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.orçamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.orçamentoToolStripMenuItem.Text = "&Orçamento";
             // 
             // financeiroToolStripMenuItem
@@ -241,13 +242,13 @@ namespace UI
             // entradaCompraToolStripMenuItem
             // 
             this.entradaCompraToolStripMenuItem.Name = "entradaCompraToolStripMenuItem";
-            this.entradaCompraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entradaCompraToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.entradaCompraToolStripMenuItem.Text = "&Entrada (Compra)";
             // 
             // saídaVendaToolStripMenuItem
             // 
             this.saídaVendaToolStripMenuItem.Name = "saídaVendaToolStripMenuItem";
-            this.saídaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saídaVendaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.saídaVendaToolStripMenuItem.Text = "&Saída (Venda)";
             // 
             // úteisToolStripMenuItem
